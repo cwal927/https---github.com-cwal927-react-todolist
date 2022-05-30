@@ -44,7 +44,7 @@ function TotoList(){
         <div className='wrap'>
             <div className='todoListDiv'>
                 <div>
-                    <h1>일정관리22</h1>
+                    <h1>일정관리</h1>
                 </div>
                 <div>
                     <input className="todoListInput" type='text' id='contents' name='contents' value={inputText} onChange={inputChangeEvent}></input>
