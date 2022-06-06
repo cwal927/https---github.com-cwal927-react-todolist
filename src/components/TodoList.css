@@ -1,23 +1,23 @@
-
 ul{
     list-style: none;
     padding-left: 0px;
 }
-
 .wrap{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgb(216, 216, 216);
+    margin: 0;
 }
 
 .todoListDiv{
-    width: 512px;
-    height: 768px;
-    position: relative;
+    width: calc(100% - 512px);
+    height:calc(100% - 20px);
+    top:10px;
+    left:250px;
+    position: absolute;
     background: white;
     border-radius: 16px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
-    margin: 0 auto;
 }
 .title{
     height: 100px;
@@ -27,13 +27,26 @@ ul{
     
 }
 h1 {
-    margin: 100px 0px;
     padding: 20px 0px;
-    background-color: #444444;
+    background-color: rgb(14, 171, 233);
     text-align: center;
     color: #ffffff;
   }
+.todoListInput{
+    width: calc(100% - 100px);
+    height:30px;
+    background: #a1a3a4;
+}
+input::placeholder{
+    color: #dee3e6;
+    font-size:1.125rem;
+}
 
+.todoListButton{
+    height:40px;
+    width: 50px;
+    margin-left:20px;
+}
 /*
 .agree .all_agree:after {
     display:block; 
