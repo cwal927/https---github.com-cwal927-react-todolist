@@ -64,9 +64,11 @@ function TotoList(){
         <div>
             <input className="todoListInput" type='text' id='contents' name='contents' placeholder="할일을 입력해 주세요." value={inputText} onChange={inputChangeEvent}></input>
             <button value="" className="todoListButton" onClick={addInputTextEvent}>+</button>
-            <ul>
-                {mapList}
-            </ul>
+            <div className="todoMapList" >
+                <ul>
+                    {mapList}
+                </ul>
+            </div>
         </div>
     )
 }
