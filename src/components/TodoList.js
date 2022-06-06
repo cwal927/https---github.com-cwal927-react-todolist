@@ -8,6 +8,19 @@ function TotoList(){
     const [nextId, setNextId] = useState(List.length+1);
     const [inputText,setInputText] = useState('');
     const addInputTextEvent = () => {
+        if(inputText.trim().length < 1){
+            alert("할일을 입력해 주세요.");
+            setInputText('');
+            return;
+        }
+
+        if(List.filter(item => item.text === inputText).length > 0){
+            alert("중복된 할 일입니다.");
+            setInputText('');
+            return;
+        }
+        
+        List.filter(str=>str.text!==inputText);
         const newStrMap = List.concat({
             id: nextId,
             text: inputText
